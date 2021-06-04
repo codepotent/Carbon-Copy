@@ -11,10 +11,3 @@ Duplicating a ClassicPress post or page is great, but, what about duplicating th
 **...or...**
 
 1. From an edit screen, click the "Duplicate" button.
-
-
-### Always use the **[latest release](https://github.com/codepotent/carbon-copy/releases/latest)** on production sites! 
-
----
-
-[![](https://static.codepotent.com/images/logotype/code-potent-logotype-wordmark-252x36.png)](https://codepotent.com/classicpress/plugins/)
