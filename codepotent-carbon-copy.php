@@ -112,7 +112,7 @@ class CarbonCopy {
 
 		// If user can't edit posts, bail.
 		if (!current_user_can('edit_posts')) {
-			$actions;
+			return $actions;
 		}
 
 		// Add the duplication link to the $actions array.
