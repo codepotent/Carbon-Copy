@@ -74,11 +74,8 @@ class CarbonCopy {
 	 */
 	public function init() {
 
-		// Load constants.
-		require_once(plugin_dir_path(__FILE__).'includes/constants.php');
-
 		// Load update client.
-		require_once(PATH_CLASSES.'/UpdateClient.class.php');
+		require_once('classes/UpdateClient.class.php');
 
 		// Hook the duplication method into the admin request process.
 		add_action('admin_action_'.$this->prefix, [$this, 'generate_copy']);
