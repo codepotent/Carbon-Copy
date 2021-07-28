@@ -256,7 +256,7 @@ class CarbonCopy {
 		foreach ($taxonomies as $taxonomy) {
 
 			// Get the slugs of the terms associated with current taxonomy.
-			$terms = wp_get_object_terms($source->ID, $taxonomy, ['fields'=>'slugs']);
+			$terms = wp_get_object_terms($source->ID, $taxonomy, ['fields' => 'slugs']);
 
 			// Copy the source term slugs to the target item.
 			wp_set_object_terms($target_id, $terms, $taxonomy, false);
@@ -286,7 +286,7 @@ class CarbonCopy {
 		$metadata = get_post_custom($source->ID);
 
 		// Iterate and duplicate any found meta data.
-		foreach ($metadata as $key=>$values) {
+		foreach ($metadata as $key => $values) {
 			foreach ($values as $value) {
 				add_post_meta($target_id, $key, $value);
 			}
