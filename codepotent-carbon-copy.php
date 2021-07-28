@@ -154,7 +154,7 @@ class CarbonCopy {
 	 *
 	 * @since 1.0.0
 	 */
-	public function generate_copy(){
+	public function generate_copy() {
 
 		// If user can't edit items, send'em off into the weeds.
 		if (!current_user_can('edit_posts')) {
@@ -224,14 +224,11 @@ class CarbonCopy {
 			'comment_status' => $source->comment_status,
 			'ping_status'    => $source->ping_status,
 			'to_ping'        => $source->to_ping,
-			'menu_order'     => $source->menu_order
+			'menu_order'     => $source->menu_order,
 		];
 
-		// Insert new item.
-		$target_id = wp_insert_post($target);
-
-		// Return the new item's id.
-		return $target_id;
+		// Insert new item and return the new item's id.
+		return wp_insert_post($target);
 
 	}
 
