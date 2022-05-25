@@ -73,6 +73,8 @@ class CarbonCopy {
 	 * @since 1.0.0
 	 */
 	public function init() {
+		// Load text domain.
+		add_action('plugins_loaded', [$this, 'text_domain']);
 
 		// Load update client.
 		require_once('classes/UpdateClient.class.php');
@@ -89,6 +91,10 @@ class CarbonCopy {
 		// Inject duplication button into the post/page/CPT publishing meta box.
 		add_action('post_submitbox_misc_actions', [$this, 'register_action_button']);
 
+	}
+
+	public function text_domain() {
+		load_plugin_textdomain('codepotent-carbon-copy', false, basename(dirname(__FILE__)).'/languages');
 	}
 
 	/**

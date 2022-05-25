@@ -1,0 +1,53 @@
+# Copyright (C) 2022 Simone Fioravanti
+# This file is distributed under the same license as the Carbon Copy plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Carbon Copy 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/codepotent-carbon-"
+"copy\n"
+"Last-Translator: root <root@giecloud1.gieffeedizioni.it>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-05-25T13:15:41+00:00\n"
+"PO-Revision-Date: 2022-05-25 15:16+0200\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: codepotent-carbon-copy\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+msgid "Carbon Copy"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://software.gieffeedizioni.it"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"One-click duplication of ClassicPress posts, pages, and custom post types. "
+"Copies taxonomy associations and metadata, too!"
+msgstr "Duplica post, pagine e custom post types di ClassicPress con un click. Copia anche tassonomie e metadati associati."
+
+#. Author of the plugin
+msgid "Simone Fioravanti"
+msgstr ""
+
+#: codepotent-carbon-copy.php:125 codepotent-carbon-copy.php:148
+msgid "Duplicate"
+msgstr "Duplica"
+
+#: codepotent-carbon-copy.php:167
+msgid "A higher level of permission is required to perform this action."
+msgstr "Non hai permessi a sufficienza per questa operazione."
+
+#: codepotent-carbon-copy.php:172
+msgid "Item could not be duplicated."
+msgstr "Impossibile duplicare l'elemento."
+
+#: codepotent-carbon-copy.php:183
+msgid "Source item could not be found."
+msgstr "Elemento sorgente non trovato."
