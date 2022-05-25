@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  * Plugin Name: Carbon Copy
  * Description: One-click duplication of ClassicPress posts, pages, and custom post types. Copies taxonomy associations and metadata, too!
- * Version: 1.1.1
+ * Version: 1.2.0
  * Author: Simone Fioravanti
  * Author URI: https://software.gieffeedizioni.it
  * Plugin URI: https://software.gieffeedizioni.it
