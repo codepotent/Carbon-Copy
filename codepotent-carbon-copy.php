@@ -121,7 +121,7 @@ class CarbonCopy {
 		// Add the duplication link to the $actions array.
 		$actions['duplicate'] = sprintf(
 			'<a href="%s" rel="permalink">%s</a>',
-			admin_url('admin.php?action='.$this->prefix.'&post='.$post->ID),
+			esc_url_raw(wp_nonce_url(admin_url('admin.php?action='.$this->prefix.'&post='.$post->ID))),
 			esc_html__('Duplicate', 'codepotent-carbon-copy')
 		);
 
@@ -145,7 +145,7 @@ class CarbonCopy {
 
 		// Print a section container and duplication button.
 		echo '<div class="misc-pub-section">';
-		echo '<a href="'.admin_url('admin.php?action='.$this->prefix.'&post='.$item->ID).'" class="button button-secondary">'.esc_html__('Duplicate', 'codepotent-carbon-copy').'</a>';
+		echo '<a href="'.esc_url_raw(wp_nonce_url(admin_url('admin.php?action='.$this->prefix.'&post='.$item->ID))) .'" class="button button-secondary">'.esc_html__('Duplicate', 'codepotent-carbon-copy').'</a>';
 		echo '</div>';
 
 	}
@@ -163,6 +163,11 @@ class CarbonCopy {
 	public function generate_copy() {
 
 		// If user can't edit items, send'em off into the weeds.
+		if (!isset($_REQUEST['_wpnonce']) || !wp_verify_nonce(sanitize_key(wp_unslash($_REQUEST['_wpnonce'])))) {
+			wp_die(esc_html__('A higher level of permission is required to perform this action.', 'codepotent-carbon-copy'));
+		}
+
+		// If user can't edit items, send'em off into the weeds.
 		if (!current_user_can('edit_posts')) {
 			wp_die(esc_html__('A higher level of permission is required to perform this action.', 'codepotent-carbon-copy'));
 		}
@@ -172,11 +177,8 @@ class CarbonCopy {
 			wp_die(esc_html__('Item could not be duplicated.', 'codepotent-carbon-copy'));
 		}
 
-		// Extract the post id from the request.
-		$source_id = (isset($_GET['post']) ? (int)$_GET['post'] : (int)$_POST['post']);
-
 		// Get source item.
-		$source = get_post($source_id);
+		$source = get_post(sanitize_key(wp_unslash($_REQUEST['post'])));
 
 		// If source item wasn't retrieved, bail.
 		if (!is_object($source)) {
@@ -193,7 +195,7 @@ class CarbonCopy {
 		$this->copy_meta($source, $target_id);
 
 		// Redirect user to the new item's edit screen.
-		wp_redirect(admin_url('post.php?action=edit&post='.$target_id));
+		wp_safe_redirect(admin_url('post.php?action=edit&post='.$target_id));
 
 		// Exit stage left.
 		exit;
