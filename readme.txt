@@ -8,6 +8,8 @@ Domain Path:       /languages
 Requires PHP:      5.6
 Requires:          1.0.0
 Tested:            4.9.99
+Requires up to:    1.0.0
+Tested up to:      4.9.99
 Author:            Simone Fioravanti
 Author URI:        https://software.gieffeedizioni.it
 Plugin URI:        https://software.gieffeedizioni.it
