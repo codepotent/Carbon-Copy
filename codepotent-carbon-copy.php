@@ -10,6 +10,8 @@
  * Plugin URI: https://software.gieffeedizioni.it
  * Text Domain: codepotent-carbon-copy
  * Domain Path: /languages
+ * License: GPLv2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * -----------------------------------------------------------------------------
  * This is free software released under the terms of the General Public License,
  * version 2, or later. It is distributed WITHOUT ANY WARRANTY; without even the

@@ -2,6 +2,7 @@
 
 Description:       Copy posts, pages, and custom post types with a single click. The #1 solution for quickly duplicating items, including the title, content, and excerpt, as well as taxonomy associations, metadata, custom fields, and comment and trackback settings.
 Version:           1.2.2
+Tags:              copy post, copy page, duplicate post, duplicate page, clone post, clone page, duplicate, clone, carbon copy
 Text Domain:       codepotent-carbon-copy
 Domain Path:       /languages
 Requires PHP:      5.6
