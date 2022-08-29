@@ -1,7 +1,7 @@
 === Carbon Copy ===
 
 Description:       Copy posts, pages, and custom post types with a single click. The #1 solution for quickly duplicating items, including the title, content, and excerpt, as well as taxonomy associations, metadata, custom fields, and comment and trackback settings.
-Version:           1.2.2
+Version:           1.2.3
 Tags:              copy post, copy page, duplicate post, duplicate page, clone post, clone page, duplicate, clone, carbon copy
 Text Domain:       codepotent-carbon-copy
 Domain Path:       /languages
@@ -13,7 +13,7 @@ Tested up to:      4.9.99
 Author:            Simone Fioravanti
 Author URI:        https://software.gieffeedizioni.it
 Plugin URI:        https://software.gieffeedizioni.it
-Download link:     https://github.com/xxsimoxx/codepotent-carbon-copy/releases/download/1.2.2/codepotent-carbon-copy-1.2.2.zip
+Download link:     https://github.com/xxsimoxx/codepotent-carbon-copy/releases/download/1.2.3/codepotent-carbon-copy-1.2.3.zip
 License:           GPLv2
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,10 @@ It would, yes. And that's why, when you duplicate an item that supports permalin
 == Changelog ==
 
 # Changelog
+### Version 1.2.3
+**AUG-29-2022**
+ 1. Add headers for the ClassicPress Plugin Directory
+ 
 ### Version 1.2.2
 **JUN-06-2022**
  1. Fixes for the ClassicPress Plugin Directory

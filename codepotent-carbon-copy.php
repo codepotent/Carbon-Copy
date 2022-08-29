@@ -4,11 +4,13 @@
  * -----------------------------------------------------------------------------
  * Plugin Name: Carbon Copy
  * Description: One-click duplication of ClassicPress posts, pages, and custom post types. Copies taxonomy associations and metadata, too!
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: Simone Fioravanti
  * Author URI: https://software.gieffeedizioni.it
  * Plugin URI: https://software.gieffeedizioni.it
  * Text Domain: codepotent-carbon-copy
+ * Requires PHP: 5.6
+ * Requires CP: 1.0
  * Domain Path: /languages
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
